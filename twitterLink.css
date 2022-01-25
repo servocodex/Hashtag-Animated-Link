@@ -1,0 +1,39 @@
+.inBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.cross {
+  font-size: 70px;
+  color: gray;
+  text-decoration: none;
+  transition-duration: 1000ms;
+  transition-property: background, transform;
+}
+
+.cross:hover {
+  color: #00acee;
+  transform: rotate(135deg);
+}
+
+.crossText {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.crossText:hover span {
+  display: none;
+}
+
+.crossText:hover::after {
+  content: "CLICK ON THE SYMBOL,PLEASE! 😠";
+}
+
+@media only screen and (max-width: 600px) {
+  .crossText:hover::after {
+    content: "TAP ON THE SYMBOL,PLEASE! 😠";
+  }
+}

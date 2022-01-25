@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta author="Servo Codex(Zjordon)">
+  <meta name="description"
+    content="Servo Codex is a organization that provides open-source web templates. The Servo Codex's Hashtag link is an animated link that will change from a symbol to a hashtag for the user to be redirected to the client's Twitter page.">
+  <title>Servo Codex | Hashtag Link </title>
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Roboto:ital,wght@1,700&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+
+  <!--CSS Style Sheets-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dots.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="twitterLink.css">
+
+  <!--Hamburger Menu Action-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(function() {
+      $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+          $(".item").removeClass("active");
+        } else {
+          $(".item").addClass("active");
+        }
+      })
+    });
+  </script>
+
+</head>
+
+<body>
+  <!--Nav Menu-->
+  <nav>
+    <ul class="menu">
+      <li class="logo"><a href="index.html">Servo <span class="logoHalf">Codex</span></a></li>
+      <li class="item"><a href="index.html">Home</a></li>
+      <li class="item"><a href="https://www.gofundme.com/f/help-servo-codex-stay-online?utm_source=customer&utm_medium=copy_link&utm_campaign=p_cf+share-flow-1">Donate</a></li>
+      <li class="toggle"><span class="bars"></span></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="one">
+      <div>
+        <h1 class="hspan">Get Your Hashtag Animation Link For:</h1>
+        <p class="subHeading">
+          twitter.com
+        </p>
+        <p class="hspan">
+          Try The Example Below:
+        </p>
+      </div>
+
+      <!--Animated Hashtag Link-->
+      <div class="inBox">
+        <a href="https://twitter.com/?lang=en" class="cross">⨳</a>
+        <p class="crossText">
+          <span>Click Or Tap On The Symbol</span>
+        </p>
+      </div>
+      <div>
+      </div>
+
+    </section>
+
+    <section class="two">
+      <div class="twoText">
+        <p class="logoBody">
+          Servo <span class="logoHalfBody">Codex's</span>
+        </p>
+        <hr class="dots" />
+        <p>
+          Open-Source Animated Links For Webpages
+        </p>
+
+      </div>
+    </section>
+
+    <section class="three">
+      <p class="pthree">
+        Servo Codex is a organization that provides open-source web templates.
+      </p>
+      <p class="pthree">
+        The Servo Codex's Hashtag link is a animated link that will change from a symbol to a hashtag for the user to be redirected to the client's Twitter page.
+      </p>
+
+      <!--GitHub Repisitory Link-->
+      <div>
+        <h3>View GitHub repistory for source code: </h3>
+        <a href="" class="gitLink">CLICK HERE</a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div>
+      <p>
+        © 2022 <span class=logoFooter>Servo </span> <span class="logoFooterHalf">Codex</span>
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

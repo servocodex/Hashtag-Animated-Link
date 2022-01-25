@@ -1,0 +1,6 @@
+.dots {
+  border-style: dotted none none none;
+  width: 7%;
+  border-width: 15px;
+  color: white;
+}

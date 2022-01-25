@@ -1,0 +1,121 @@
+body {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-family: 'Bebas Neue', cursive;
+}
+
+section {
+  padding: 20vh 0;
+}
+
+.logoBody {
+  font-size: 1.2em;
+  font-family: 'Lobster', cursive;
+}
+
+.logoHalfBody {
+  font-size: .8em;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.logoFooter {
+  font-family: 'Lobster', cursive;
+}
+
+.logoFooterHalf {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.twoText {
+  font-size: 1.7em;
+  color: white;
+}
+
+h1 {
+  font-family: 'Sedgwick Ave', cursive;
+  color: #00acee;
+}
+
+h3 {
+  color: #00acee;
+}
+
+.subHeading {
+  font-size: 1.2em;
+  font-family: Helvetica Neue;
+  color: #00acee;
+}
+
+.hspan {
+  font-family: 'Sedgwick Ave', cursive;
+  color: #00acee;
+}
+
+.pthree {
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 1em;
+}
+
+.one {
+  background: white;
+  position: relative;
+  padding: 25vh 0;
+}
+
+.two {
+  padding: 10vh 0;
+  background: #00acee;
+  position: relative;
+  margin-bottom: -10vw;
+  z-index: 10;
+}
+
+.three {
+  background: white;
+  position: relative;
+}
+
+.one:after,
+.one:before {
+  position: absolute;
+  content: '';
+  width: 150px;
+  height: 150px;
+  background: white;
+  bottom: 0;
+}
+
+.one:after {
+  left: 50%;
+  transform: skew(0, -20deg);
+  z-index: 100;
+}
+
+.one:before {
+  right: 50%;
+  transform: skew(0, 20deg);
+  z-index: 100;
+}
+
+.gitLink {
+  color: black;
+  text-decoration: underline;
+  font-size: 40px;
+}
+
+.gitLink:hover {
+  color: white;
+  background: #00acee;
+}
+
+footer {
+  background: #00acee;
+}
+
+/*Mobile Version*/
+@media only screen and (max-width: 999px) {
+  .one {
+    padding: 25vh 0;
+  }
+}

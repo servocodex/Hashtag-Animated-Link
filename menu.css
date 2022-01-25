@@ -1,0 +1,113 @@
+nav {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: #00acee;
+  padding: 5px 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {}
+
+.menu li {
+  font-size: 20px;
+  padding: 15px 5px;
+}
+
+.menu li a {
+  display: block;
+}
+
+.logo a {
+  font-size: 30px;
+  font-family: 'Lobster', cursive;
+}
+
+.logoHalf {
+  font-size: 25px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+/*Mobile Menu*/
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle {
+  order: 1;
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+  order: 2;
+  display: none;
+}
+
+.item.active {
+  display: block;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.bars {
+  background: black;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  width: 18px;
+  text-align: justify;
+}
+
+.bars::before, .bars::after {
+  background: black;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: absolute;
+  width: 18px;
+}
+
+.bars::before {
+  top: 5px;
+}
+
+.bars::after {
+  top: -5px;
+}
+
+@media all and (min-width: 768px) {
+  .item {
+    display: block;
+    width: auto;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .logo {
+    order: 0;
+  }
+
+  .item {
+    order: 1;
+  }
+
+  .menu li {
+    padding: 15px 10px;
+  }
+}
