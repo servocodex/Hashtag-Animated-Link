@@ -179,6 +179,6 @@ footer {
 /*Mobile Version*/
 @media only screen and (max-width: 999px) {
   .one {
-    padding: 10vh 0;
+    padding: 15vh 0;
   }
 }
